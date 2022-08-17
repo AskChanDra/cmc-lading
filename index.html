@@ -4,11 +4,167 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png"/>
+    <title>CMC Markets</title>
   </head>
-  <body>
-    <div class="bg-red-500">
-      Hello 
+  <body class=" bg-darkBlack">
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-center">
+          <!-- Logo -->
+          <div class="pt-2 w-16">
+            <img src="cmc-logo.png" alt="CMC Logo" />
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden  space-x-6 md:flex text-white sm:ml-6 ">
+            <a href="#" class="hover:text-darkGray">Markets</a>
+            <a href="#" class="hover:text-darkGray">Trading Platform</a>
+            <a href="#" class="hover:text-darkGray">Learn</a>
+            <a href="#" class="hover:text-darkGray">Why CMC</a>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="hidden mr-4 p-1.5 px-6  w-36 text-center border border-darkGray text-darkGray bg-transparent  rounded-lg baseline hover:bg-darkGray hover:text-white md:block"
+            >Login</a
+          >
+
+          <a
+            href="#"
+            class="hidden p-1.5 px-6 w-36  text-darkBlack bg-lightBlue  rounded-lg baseline hover:bg-lightBlue  md:block"
+            >Start trading</a
+          >
+        </div>
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+        <a href="#" >Markets</a>
+        <a href="#" >Trading Platform</a>
+        <a href="#" >Learn</a>
+        <a href="#" >Why CMC</a>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- ========================= Hero Section + Table  ========================= -->
+    <div class="container p-5 mt-4">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="w-full px-4">
+          <div class="text-center max-w-[780px] mx-auto" >
+            <h1 class="text-white font-bold text-3xl sm:text-4xl md:text-[35px] leading-snug sm:leading-snug  md:leading-snug pt-4 mb-8 "  >
+              Competitive spreads for 11,500+ CFDs
+            </h1>
+            <p  class=" text-base   mx-auto mb-10 text-white  max-w-[600px] " >
+              Spread bet and trade CFDs on thousands of global markets, including forex, indices, commodities, and shares.
+            </p>
+          </div>
+        </div>
+         <!-- Table Section -->
+        <div class="w-full px-4 mt-10">
+          <div class="text-center max-w-[1024px] mx-auto">
+       
+          <div class="flex flex-col">
+            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                  <table class="min-w-full">
+                    <thead class="border-b-0 ">
+                      <tr>
+                        <th scope="col" class="text-sm font-medium text-white px-6 py-4 text-left">
+                          Instruments
+                        </th>
+                        <th scope="col" class="text-sm font-medium text-white px-6 py-4 text-center">
+                          Min Spread
+                        </th>
+                        <th scope="col" class="text-sm font-medium text-white px-6 py-4 text-center">
+                         Day
+                        </th>
+                        <th scope="col" class="text-sm font-medium text-white px-6 py-4 text-center">
+                          
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-lightGray bg-opacity-75 border-b-2 border-gray-600">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white text-left">
+                          US 30
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          2
+                        </td>
+                        <td class="text-sm text-darkGreen font-light px-6 py-4 whitespace-nowrap">
+                          0.27%
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <a
+                          href="#"
+                          class="hidden mr-4 p-1.5 px-6  w-20 text-center border border-darkGray text-darkGray bg-transparent  rounded-lg baseline hover:bg-lightGray hover:text-white md:block"
+                          >Trade</a>
+                        </td>
+                      </tr>
+                      <tr class="bg-lightGray bg-opacity-75 border-b-2 border-gray-600">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white text-left">
+                          Germany 40
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          1
+                        </td>
+                        <td class="text-sm text-darkRed font-light px-6 py-4 whitespace-nowrap">
+                          0.63%
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <a
+                          href="#"
+                          class="hidden mr-4 p-1.5 px-6  w-20 text-center border border-darkGray text-darkGray bg-transparent  rounded-lg baseline hover:bg-lightGray hover:text-white md:block"
+                          >Trade</a>
+                        </td>
+                      </tr>
+                      <tr class="bg-lightGray bg-opacity-75 border-b-2 border-gray-600">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-white text-left">
+                          US NDAQ 100
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          1
+                        </td>
+                        <td class="text-sm text-darkGreen font-light px-6 py-4 whitespace-nowrap">
+                          0.28%
+                        </td>
+                        <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <a
+                          href="#"
+                          class="hidden mr-4 p-1.5 px-6  w-20 text-center border border-darkGray text-darkGray bg-transparent  rounded-lg baseline hover:bg-lightGray hover:text-white md:block"
+                          >Trade</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p class="text-left text-white py-4">Pricing is indicative.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!--End Table section -->
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

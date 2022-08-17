@@ -1,3 +1,5 @@
+import config from './modules/config'
+import getPopularList from './modules/getPopularList'
 import './style.css'
 
 const btn = document.getElementById('menu-btn')
@@ -8,3 +10,6 @@ btn.addEventListener('click', () => {
   nav.classList.toggle('flex')
   nav.classList.toggle('hidden')
 })
+
+getPopularList(config.popularRoute)
+
